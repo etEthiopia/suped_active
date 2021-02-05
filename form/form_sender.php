@@ -1,30 +1,30 @@
 <?php
-// function reCaptcha($recaptcha){
-//     $secret = "6LesxksaAAAAABRTqKxxlfCU7WGHzHtBtH11FrF0";
-//     $ip = $_SERVER['REMOTE_ADDR'];
+function reCaptcha($recaptcha){
+    $secret = "6LesxksaAAAAABRTqKxxlfCU7WGHzHtBtH11FrF0";
+    $ip = $_SERVER['REMOTE_ADDR'];
   
-//     $postvars = array("secret"=>$secret, "response"=>$recaptcha, "remoteip"=>$ip);
-//     $url = "https://www.google.com/recaptcha/api/siteverify";
-//     $ch = curl_init();
-//     curl_setopt($ch, CURLOPT_URL, $url);
-//     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-//     curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-//     curl_setopt($ch, CURLOPT_POSTFIELDS, $postvars);
-//     $data = curl_exec($ch);
-//     curl_close($ch);
+    $postvars = array("secret"=>$secret, "response"=>$recaptcha, "remoteip"=>$ip);
+    $url = "https://www.google.com/recaptcha/api/siteverify";
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $postvars);
+    $data = curl_exec($ch);
+    curl_close($ch);
   
-//     return json_decode($data, true);
-//   }
+    return json_decode($data, true);
+  }
 require 'class.phpmailer.php';
-//$recaptcha = $_POST['g-recaptcha-response'];
-// $res = reCaptcha($recaptcha);
-// if(!$res['success']){
-//     echo '<script type="text/javascript">
-//     window.alert("Please Try the reCaptcha Again");
-//     window.location.href = "../index.html";
-//     </script>';
-// }
-// else{
+$recaptcha = $_POST['g-recaptcha-response'];
+$res = reCaptcha($recaptcha);
+if(!$res['success']){
+    echo '<script type="text/javascript">
+    window.alert("Please Try the reCaptcha Again");
+    window.location.href = "../index.html";
+    </script>';
+}
+else{
 try{
 $mail = new PHPMailer;
 $mail->IsSMTP();								//Sets Mailer to send message using SMTP
@@ -62,5 +62,5 @@ else
     </script>';
 
 }
-//}
+}
 ?>
