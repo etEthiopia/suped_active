@@ -7894,7 +7894,7 @@ a {
 }
 .cid-sknq68iTtk .navbar.collapsed .dropdown-menu .dropdown-item {
   padding: 0.25rem 1.5rem;
-  text-align: center;
+  text-align: right;
 }
 .cid-sknq68iTtk .navbar.collapsed .icons-menu {
   padding-left: 0;
@@ -7932,7 +7932,7 @@ a {
   }
   .cid-sknq68iTtk .navbar .dropdown-menu .dropdown-item {
     padding: 0.25rem 1.5rem !important;
-    text-align: center;
+    text-align: right;
   }
   .cid-sknq68iTtk .navbar .navbar-brand {
     flex-shrink: initial;
