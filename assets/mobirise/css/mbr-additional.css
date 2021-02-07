@@ -6581,7 +6581,7 @@ a {
 }
 .cid-skuqFAwK6w {
   padding-top: 5rem;
-  padding-bottom: 0rem;
+  padding-bottom: 5rem;
   background-color: #ffffff;
 }
 .cid-skuqFAwK6w .image-wrapper {
@@ -6589,19 +6589,19 @@ a {
   align-items: center;
 }
 .cid-skuqFAwK6w .card-wrapper {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: flex;
   border-radius: 4px;
   background: #fafafa;
 }
 @media (max-width: 991px) {
   .cid-skuqFAwK6w .card-wrapper {
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
   }
 }
 @media (min-width: 992px) {
   .cid-skuqFAwK6w .card-wrapper {
-    padding: 2rem 4rem;
+    padding: 1rem 2rem;
   }
 }
 .cid-skuqFAwK6w .mbr-iconfont {
