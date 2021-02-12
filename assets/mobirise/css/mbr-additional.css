@@ -4457,10 +4457,10 @@ a {
 }
 .cid-so3jkFiGyX .mbr-section-title {
   color: #098040;
-  text-align: right;
+  text-align: left;
 }
 .cid-so3jkFiGyX .mbr-text {
-  text-align: right;
+  text-align: left;
 }
 .cid-so7vwLc0ot {
   padding-top: 3rem;
@@ -4506,10 +4506,10 @@ a {
 }
 .cid-so7xqJlzLv .mbr-section-title {
   color: #098040;
-  text-align: right;
+  text-align: left;
 }
 .cid-so7xqJlzLv .mbr-text {
-  text-align: right;
+  text-align: left;
 }
 .cid-so7zPL9ODS {
   padding-top: 3rem;
@@ -4596,10 +4596,10 @@ a {
 }
 .cid-so7BJmTWdT .mbr-section-title {
   color: #098040;
-  text-align: right;
+  text-align: left;
 }
 .cid-so7BJmTWdT .mbr-text {
-  text-align: right;
+  text-align: left;
 }
 .cid-so853r5pyS {
   padding-top: 6rem;
@@ -4620,12 +4620,12 @@ a {
   }
 }
 .cid-so853r5pyS .mbr-section-title {
-  color: #098040;
+  color:white;
 }
 .cid-so846GZ7gf {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #ffffff;
+  background-image: url("../../../assets/images/photo-2021-02-05-13-53-23-617x463.jpg");
 }
 .cid-so846GZ7gf .mbr-overlay {
   background-color: #ffffff;
@@ -4654,7 +4654,10 @@ a {
   width: 100%;
 }
 .cid-so846GZ7gf .mbr-section-title {
-  color: #098040;
+  color: white;
+}
+.cid-so846GZ7gf .mbr-section-subtitle {
+  color: white;
 }
 .cid-skntpQ9IiO {
   padding-top: 75px;
@@ -9052,3 +9055,9 @@ a {
 .cid-soxtI6Jtg0 .mbr-text {
   text-align: center;
 }
+.justify-section{
+  text-align: justify !important;
+}
+
+#image2-3i .row
+{flex-direction: row-reverse;}
