@@ -16,10 +16,9 @@
     color: white;
     padding: 20px;
     text-decoration: none;
-    left: -100px;
     margin-top: -34px;
     transition: all .3s;
-    opacity: 0;
+    opacity: 1;
     z-index: 10000;
   }
   
@@ -28,13 +27,16 @@
     content: "\f054";
     left: auto;
   }
-  
-  .slider:hover .previous,
-  .slider:hover .next {
-    opacity: 1;
+
+
+
+
+  .slider:hover .next, .previous {
+    font-size: 20px;
   }
+
   
-  .slider:hover .previous {
+  .slider .previous {
     left: 0;
   }
   
