@@ -9060,4 +9060,11 @@ a {
 }
 
 #image2-3i .row
-{flex-direction: row-reverse;}
+{flex-direction: row-reverse;
+}
+
+#image2-3i{
+  background-color: #fafafa;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
