@@ -54,6 +54,7 @@
     position: absolute;
     transform: scale(0.5, 0.5);
     opacity: 0;
+    height: 100%;
     transition: all .3s;
   }
   
@@ -64,16 +65,24 @@
     background-size: cover;
     color: white;
   }
-  .slide div{
+  .slide .ovrly{
     background: rgba(0, 0, 0, 0.5);
     overflow: hidden;
     height: 100%;
     z-index: 2;
-    padding: 15% 7%;
-    padding-bottom: 7%;
-    margin-top: -50px;
-
+    padding: 0% 7%;
+   display: table;
   }
+  .ovrly div{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  /* .ovrly h2{
+    display: inline-block;
+  }
+  .ovrly p{
+    display: inline-block;
+  } */
 
   .slide div h2 strong{
       font-size:4vw !important;

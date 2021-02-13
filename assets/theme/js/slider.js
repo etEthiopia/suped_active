@@ -1,8 +1,13 @@
 var $slider = $('.slider'),
+	$overlay = $('.ovrly'),
 	$bullets = $('.bullets');
 function calculateHeight() {
 	var height = $('.slide.active').outerHeight();
+	if (height < 300) {
+		height = 300;
+	}
 	$slider.height(height);
+	//$overlay.height(height);
 }
 
 $(window).resize(function() {
