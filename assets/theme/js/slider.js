@@ -2,12 +2,14 @@ var $slider = $('.slider'),
 	$overlay = $('.ovrly'),
 	$bullets = $('.bullets');
 function calculateHeight() {
-	var height = $('.slide.active').outerHeight();
-	if (height < 300) {
+	var height = $('.slide .active').outerHeight();
+	//window.alert(window.innerWidth);
+	if (window.innerWidth < 700) {
 		height = 300;
+	} else {
+		height = 500;
 	}
 	$slider.height(height);
-	//$overlay.height(height);
 }
 
 $(window).resize(function() {
@@ -69,3 +71,25 @@ function resetBullets() {
 }
 addBullets();
 calculateHeight();
+
+jQuery(document).ready(function($) {
+	setInterval(function() {
+		moveRight();
+	}, 3000);
+
+	function gotoSlide($activeSlide, $slide, className) {
+		$activeSlide.removeClass('active').addClass('inactive ' + className);
+		$slide.removeClass('inactive').addClass('active');
+		calculateHeight();
+		resetBullets();
+		setTimeout(resetSlides, 300);
+	}
+
+	function moveRight() {
+		var $activeSlide = $('.slide.active'),
+			$nextSlide =
+				$activeSlide.next('.slide').length != 0 ? $activeSlide.next('.slide') : $('.slide:first-child');
+		console.log($nextSlide);
+		gotoSlide($activeSlide, $nextSlide, 'inactiveLeft');
+	}
+});
