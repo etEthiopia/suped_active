@@ -19,7 +19,7 @@
     margin-top: -34px;
     transition: all .3s;
     opacity: 0;
-    z-index: 10000;
+   
   }
   
   .slider .next {
@@ -52,10 +52,9 @@
     width: 100vw;
     text-align: center;
     position: absolute;
-    transform: scale(0.5, 0.5);
     opacity: 0;
     height: 100%;
-    transition: all .3s;
+    transition: all 1s;
   }
   
   .slide.first {
@@ -69,6 +68,7 @@
     background: rgba(0, 0, 0, 0.5);
     overflow: hidden;
     height: 100%;
+    width: 100%;
     z-index: 2;
     padding: 0% 7%;
    display: table;
@@ -114,7 +114,7 @@
     z-index: 1;
     left: 0;
     opacity: 1;
-    transform: scale(1, 1);
+
   }
   
   .slide.inactiveLeft {
@@ -180,7 +180,7 @@
     height: 8px;
     z-index: 14;
     margin: 0 5px;
-    cursor: pointer;
+    /* cursor: pointer; */
     border: 2px solid transparent;
     transition: all .3s;
   }
@@ -190,8 +190,8 @@
   }
   
   .slider .bullets .bullet:hover {
-    border: 2px solid rgba(255, 255, 255, .8);
-    background: transparent;
+    /* border: 2px solid rgba(255, 255, 255, .8);
+    background: transparent; */
   }
 
   
