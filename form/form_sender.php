@@ -35,7 +35,8 @@ $mail->SMTPAuth = true;							//Sets SMTP authentication. Utilizes the Username 
     // $mail->SMTPKeepAlive = true;   
 $mail->Username = 'hello@lineaddis.com';					//Sets SMTP username
 $mail->Password = 'linehelloaddis2021';					//Sets SMTP password
-$mail->SMTPSecure = '';							//Sets connection prefix. Options are "", "ssl" or "tls"
+$mail->SMTPSecure = '';	
+					//Sets connection prefix. Options are "", "ssl" or "tls"
 $mail->From = 'hello@lineaddis.com';					//Sets the From email address for the message
 $mail->FromName = 'SupEd | '.trim($_POST['name']);				//Sets the From name of the message
 $mail->AddAddress('info@suped.org', 'Client');		//Adds a "To" address
